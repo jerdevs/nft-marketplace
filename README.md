@@ -2,9 +2,10 @@
 
 **The Hottest NFT Marketplace**
 
-Inspired and credits to <a href="https://youtu.be/_ivIUCSOZ78">JavaScript Mastery</a> on YouTube for the development of this project.
+Inspired and credits to <a href="https://youtu.be/_ivIUCSOZ78">JavaScript Mastery</a> on YouTube for the development of this project. <br />
+This project has been written in TypeScript instead of Javascript.
 
-Additional feature implementations: <br />
+**Additional feature implementations:** <br />
 • Customized login page for user to enter their name <br />
 • Added likes count to each NFT and interactions of like button in Home and Details screens <br />
 • Added place and edit bid implementations for each NFT <br />
