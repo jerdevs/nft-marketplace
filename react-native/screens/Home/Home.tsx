@@ -46,30 +46,26 @@ const Home: React.FC = (): React.ReactElement => {
       <FocusedStatusBar background={COLORS.primary} />
       <HomeContainerStyled>
         <NFTContainerStyled>
-          {nftData.length ? (
-            <FlatList
-              data={nftData}
-              keyExtractor={(item: NFT): string => item.id}
-              renderItem={(result: { item: NFT }): React.ReactElement => {
-                return (
-                  <NFTCard
-                    data={result.item}
-                    onLike={(nftId: string): void => {
-                      setNftData(getNFTDataOnLike(nftId, nftData));
-                      onLike && onLike(nftId);
-                    }}
-                  />
-                );
-              }}
-              showsVerticalScrollIndicator={false}
-              ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}
-            />
-          ) : (
-            <>
-              <HomeHeader onSearch={handleSearch} />
+          <FlatList
+            data={nftData}
+            keyExtractor={(item: NFT): string => item.id}
+            renderItem={(result: { item: NFT }): React.ReactElement => {
+              return (
+                <NFTCard
+                  data={result.item}
+                  onLike={(nftId: string): void => {
+                    setNftData(getNFTDataOnLike(nftId, nftData));
+                    onLike && onLike(nftId);
+                  }}
+                />
+              );
+            }}
+            showsVerticalScrollIndicator={false}
+            ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}
+            ListEmptyComponent={
               <NoNFTsFoundStyled>No NFTs found</NoNFTsFoundStyled>
-            </>
-          )}
+            }
+          />
         </NFTContainerStyled>
         <HomePageStyled>
           <HomeTopPageStyled />
