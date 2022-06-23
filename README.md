@@ -1,4 +1,4 @@
-# nft-app
+# nft-marketplace
 
 **The Hottest NFT Marketplace**
 
