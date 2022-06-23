@@ -42,9 +42,9 @@ export const DescriptionStyled = styled.Text`
 export const NameTextInputStyled = styled.TextInput`
   color: ${COLORS.white};
   margin: ${SIZES.extraLarge * 1.5}px 0 ${SIZES.font}px 0;
-  width: 50%;
+  width: 100%;
   border-radius: ${SIZES.font}px;
   background-color: ${COLORS.gray};
-  padding: ${SIZES.font}px;
+  padding: ${SIZES.font}px ${SIZES.extraLarge * 3}px;
   text-align: center;
 `;

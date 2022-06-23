@@ -15,6 +15,7 @@ import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList } from "../../App";
 import { AppContext } from "../../context/AppContext";
+import { KeyboardAvoidingView, Platform, View } from "react-native";
 
 const Register: React.FC = (): React.ReactElement => {
   const navigate = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -40,11 +41,13 @@ const Register: React.FC = (): React.ReactElement => {
         <TitleStyled>The hottest NFT marketplace</TitleStyled>
         <DescriptionStyled>Discover, collect and sell</DescriptionStyled>
         <DescriptionStyled>extraordinary NFTs</DescriptionStyled>
-        <NameTextInputStyled
-          placeholderTextColor={COLORS.lightGray}
-          placeholder="Your name"
-          onChangeText={(value: string): void => setName(value)}
-        />
+        <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={150}>
+          <NameTextInputStyled
+            placeholderTextColor={COLORS.lightGray}
+            placeholder="Your name"
+            onChangeText={(value: string): void => setName(value)}
+          />
+        </KeyboardAvoidingView>
         <RectButton
           title="Enter"
           width={120}
