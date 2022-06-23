@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Global";
 import assets from "../../assets";
+import Button from "../Button/Button";
 
 const Download: React.FC = (): React.ReactElement => {
   return (
@@ -25,6 +26,12 @@ const Download: React.FC = (): React.ReactElement => {
         >
           Source Code
         </button>
+        <div className="pt-6">
+          <Button
+            assetUrl={assets.expo}
+            link="https://expo.dev/@jerdevs/nft-app?serviceType=classic&distribution=expo-go"
+          />
+        </div>
         <div className={styles.flexCenter}>
           <img src={assets.scene} alt="download" className={styles.fullImg} />
         </div>

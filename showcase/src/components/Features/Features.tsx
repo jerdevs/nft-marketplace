@@ -12,13 +12,14 @@ const Features: React.FC = (): React.ReactElement => {
             Technologies
           </h1>
           <p className={`${styles.pText} ${styles.whiteText}`}>
-            ProNef has been developed using a cross-platform technology - React
-            Native.
+            NFT Marketplace has been developed using a cross-platform technology
+            - React Native.
           </p>
         </div>
         <div className={styles.flexWrap}>
+          <FeatureCard iconUrl={assets.typescript} iconText="TypeScript" />
           <FeatureCard iconUrl={assets.react} iconText="React Native" />
-          <FeatureCard iconUrl={assets.javascript} iconText="JavaScript" />
+          <FeatureCard iconUrl={assets.expo02} iconText="Expo" />
         </div>
       </div>
     </div>

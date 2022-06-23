@@ -7,6 +7,7 @@ import javascript from "./javascript.png";
 import react from "./react.png";
 import scene from "./scene.png";
 import mockup from "./mockup.png";
+import typescript from "./typescript.png";
 
 const assets = {
   homeHero,
@@ -18,6 +19,7 @@ const assets = {
   react,
   scene,
   mockup,
+  typescript,
 };
 
 export default assets;

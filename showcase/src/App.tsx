@@ -8,22 +8,22 @@ const App: React.FC = (): React.ReactElement => {
   return (
     <>
       <SectionWrapper
-        title="Your own store of Nifty NFTs. Start selling and growing."
-        description="Buy, store, collect, exchange NFTs and earn crypto. Join 25+ million people using ProNef Marketplace."
+        title="Your personal store of Nifty NFTs. Begin selling, collecting and growing."
+        description="Buy, store, collect, exchange NFTs and earn crypto. Join over 10+ million people using NFT Marketplace."
         showBtn
         mockupImg={assets.homeHero}
         banner="banner"
       />
       <SectionWrapper
         title="Smart User Interface Marketplace"
-        description="Experience a buttery UI of ProNef NFT Marketplace. Smooth constant colors of  fluent UI design."
+        description="Experience a slick UI of NFT Marketplace. Clean and smooth constant colors of a fluent UI design."
         mockupImg={assets.homeCards}
         reverse
       />
       <Features />
       <SectionWrapper
         title="Deployment"
-        description="ProNef is built using Expo which runs natively on all users' devices. You can easily get your app into people's hands."
+        description="NFT Marketplace is built using Expo which runs natively on all users' devices. You can easily get this app on your hands via the Expo store."
         mockupImg={assets.feature}
         reverse
         showBtn
