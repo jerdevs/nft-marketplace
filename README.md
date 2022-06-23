@@ -11,6 +11,7 @@ This project has been written in TypeScript instead of Javascript and using styl
 • Added place and edit bid implementations for each NFT <br />
 • Added countdown of bid timing for each NFT <br />
 • Added identification on which NFT user has bidded in Home screen <br />
+• Added sign out functionality which redirects back to login page <br />
 
 _**react-native**_ folder contains React Native code and _**showcase**_ folder contains ReactJS NFT showcase landing page.
 
