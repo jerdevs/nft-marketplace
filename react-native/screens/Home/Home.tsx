@@ -46,7 +46,6 @@ const Home: React.FC = (): React.ReactElement => {
       <FocusedStatusBar background={COLORS.primary} />
       <HomeContainerStyled>
         <NFTContainerStyled>
-          <HomeHeader onSearch={handleSearch} />
           {nftData.length ? (
             <FlatList
               data={nftData}
@@ -63,6 +62,7 @@ const Home: React.FC = (): React.ReactElement => {
                 );
               }}
               showsVerticalScrollIndicator={false}
+              ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}
             />
           ) : (
             <NoNFTsFoundStyled>No NFTs found</NoNFTsFoundStyled>
