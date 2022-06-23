@@ -70,3 +70,11 @@ export const SearchTextInputStyled = styled.TextInput`
   flex: 1;
   color: ${COLORS.white};
 `;
+
+export const SignOutStyled = styled.Text`
+  font-family: ${FONTS.regular};
+  font-size: ${SIZES.small}px;
+  color: ${COLORS.white};
+  text-align: center;
+  padding-top: ${SIZES.small / 2}px;
+`;

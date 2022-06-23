@@ -1,12 +1,10 @@
 import * as React from "react";
-import { Bid, NFT, NFTData } from "../constants/data";
+import { NFT, NFTData } from "../constants/data";
 import { AppContext } from "../context/AppContext";
 import {
   getBidsOnAdd,
   getBidsOnEdit,
-  getNewBid,
   getNFTDataOnLike,
-  MONTHS,
 } from "../utils/App.utils";
 
 export interface AppProviderProps {
@@ -22,7 +20,7 @@ const AppProvider: React.FC<AppProviderProps> = (props: AppProviderProps) => {
     setNfts(getNFTDataOnLike(nftId, nfts));
   };
 
-  const onLogin = (updatedName: string): void => setName(updatedName);
+  const updateName = (updatedName: string): void => setName(updatedName);
 
   const addBid = (nftId: string, bidPrice: number, isEdit?: boolean): void => {
     const updatedNfts: NFT[] = [];
@@ -41,14 +39,20 @@ const AppProvider: React.FC<AppProviderProps> = (props: AppProviderProps) => {
     setNfts(updatedNfts);
   };
 
+  const onSignOut = (): void => {
+    setNfts(NFTData);
+    setName("");
+  };
+
   return (
     <AppContext.Provider
       value={{
         nfts,
         name,
         onLike,
-        onLogin,
+        updateName,
         addBid,
+        onSignOut,
       }}
     >
       {children}

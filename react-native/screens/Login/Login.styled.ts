@@ -31,20 +31,30 @@ export const TitleStyled = styled.Text`
   text-align: center;
 `;
 
+export const DescriptionContainerStyled = styled.View`
+  padding-bottom: ${SIZES.extraLarge * 1.5}px;
+`;
+
 export const DescriptionStyled = styled.Text`
   color: ${COLORS.white};
   font-size: ${SIZES.medium}px;
   text-align: center;
-  padding: 0 ${SIZES.extraLarge * 2}px;
   line-height: ${SIZES.large}px;
 `;
 
 export const NameTextInputStyled = styled.TextInput`
   color: ${COLORS.white};
-  margin: ${SIZES.extraLarge * 1.5}px 0 ${SIZES.font}px 0;
-  width: 100%;
+  margin: 0 ${SIZES.font}px 0 0;
+  width: 65%;
   border-radius: ${SIZES.font}px;
   background-color: ${COLORS.gray};
-  padding: ${SIZES.font}px ${SIZES.extraLarge * 3}px;
+  padding: ${SIZES.font}px;
   text-align: center;
+`;
+
+export const LoginContainerStyled = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;

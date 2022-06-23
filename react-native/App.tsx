@@ -29,6 +29,7 @@ const theme: AppTheme = {
 };
 
 export type RootStackParamList = {
+  Login: {};
   Home: {};
   Details: {
     data: NFT;
