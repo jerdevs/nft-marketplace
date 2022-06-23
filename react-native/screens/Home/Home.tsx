@@ -65,7 +65,10 @@ const Home: React.FC = (): React.ReactElement => {
               ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}
             />
           ) : (
-            <NoNFTsFoundStyled>No NFTs found</NoNFTsFoundStyled>
+            <>
+              <HomeHeader onSearch={handleSearch} />
+              <NoNFTsFoundStyled>No NFTs found</NoNFTsFoundStyled>
+            </>
           )}
         </NFTContainerStyled>
         <HomePageStyled>
