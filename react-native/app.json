@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "NFT Marketplace",
-    "slug": "nft-app",
+    "slug": "nft-marketplace",
     "description": "Discover, collect and sell extraordinary NFTs",
     "version": "1.0.0",
     "orientation": "portrait",

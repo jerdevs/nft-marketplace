@@ -29,7 +29,7 @@ const Download: React.FC = (): React.ReactElement => {
         <div className="pt-6">
           <Button
             assetUrl={assets.expo}
-            link="https://expo.dev/@jerdevs/nft-app?serviceType=classic&distribution=expo-go"
+            link="https://expo.dev/@jerdevs/nft-marketplace"
           />
         </div>
         <div className={styles.flexCenter}>

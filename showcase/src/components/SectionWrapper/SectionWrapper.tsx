@@ -52,7 +52,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = (
             <div className={`text-start ${reverse ? "flex justify-end" : ""}`}>
               <Button
                 assetUrl={assets.expo}
-                link="https://expo.dev/@jerdevs/nft-app?serviceType=classic&distribution=expo-go"
+                link="https://expo.dev/@jerdevs/nft-marketplace"
               />
             </div>
           )}
