@@ -14,7 +14,17 @@ const Download: React.FC = (): React.ReactElement => {
             Get the full source code on GitHub
           </p>
         </div>
-        <button className={styles.btnPrimary}>Source Code</button>
+        <button
+          className={styles.btnPrimary}
+          onClick={(): void => {
+            window.open(
+              "https://github.com/jerdevs/nft-app/tree/master/showcase",
+              "_blank"
+            );
+          }}
+        >
+          Source Code
+        </button>
         <div className={styles.flexCenter}>
           <img src={assets.scene} alt="download" className={styles.fullImg} />
         </div>
