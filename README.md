@@ -3,7 +3,7 @@
 **The Hottest NFT Marketplace**
 
 Inspired and credits to <a href="https://youtu.be/_ivIUCSOZ78">JavaScript Mastery</a> on YouTube for the development of this project. <br />
-This project has been written in TypeScript instead of Javascript.
+This project has been written in TypeScript instead of Javascript and using styled components.
 
 **Additional feature implementations:** <br />
 • Customized login page for user to enter their name <br />
