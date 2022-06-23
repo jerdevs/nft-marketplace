@@ -11,6 +11,6 @@ Additional feature implementations: <br />
 • Added countdown of bid timing for each NFT <br />
 • Added identification on which NFT user has bidded in Home screen <br />
 
-_**react-native**_ folder contains React Native code and _**react**_ folder contains ReactJS NFT showcase landing page.
+_**react-native**_ folder contains React Native code and _**showcase**_ folder contains ReactJS NFT showcase landing page.
 
 Tech stack: ReactJS, React Native, Styled Components

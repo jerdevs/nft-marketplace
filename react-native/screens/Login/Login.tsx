@@ -38,9 +38,8 @@ const Register: React.FC = (): React.ReactElement => {
           resizeMode="contain"
         />
         <TitleStyled>The hottest NFT marketplace</TitleStyled>
-        <DescriptionStyled>
-          Discover, collect and sell <br /> extraordinary NFTs
-        </DescriptionStyled>
+        <DescriptionStyled>Discover, collect and sell</DescriptionStyled>
+        <DescriptionStyled>extraordinary NFTs</DescriptionStyled>
         <NameTextInputStyled
           placeholderTextColor={COLORS.lightGray}
           placeholder="Your name"
