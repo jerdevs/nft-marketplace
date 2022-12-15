@@ -16,3 +16,5 @@ This project has been written in TypeScript instead of Javascript and using styl
 _**react-native**_ folder contains React Native code and _**showcase**_ folder contains ReactJS NFT showcase landing page.
 
 Tech stack: ReactJS, React Native, Styled Components, Expo
+
+Published site: https://nft-martketplace.netlify.app
